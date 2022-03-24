@@ -19,7 +19,7 @@ const Lyric = ({ lrc, currentTime }) => {
   const lineRenderer = useCallback(
     ({ lrcLine: { millisecond, content }, index, active }) => (
       <Text
-        style={{ textAlign: 'center', color: active ? 'green' : 'inherit' }}>
+        style={{ textAlign: 'center', color: active ? 'white' : 'gray' }}>
         {content}
       </Text>
     ),
