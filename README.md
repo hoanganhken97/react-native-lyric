@@ -25,11 +25,6 @@ const Lyric = ({ lrc, currentTime }) => {
     ),
     [],
   );
-  const onCurrentLineChange = useCallback(
-    ({ lrcLine: { millisecond, content }, index }) =>
-      console.log(index, millisecond, content),
-    [],
-  );
 
   return (
     <Lrc
@@ -38,7 +33,6 @@ const Lyric = ({ lrc, currentTime }) => {
       currentTime={currentTime}
       lineHeight={16}
       lineRenderer={lineRenderer}
-      onCurrentLineChange={onCurrentLineChange}
     />
   );
 };
