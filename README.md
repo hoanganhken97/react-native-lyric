@@ -13,7 +13,7 @@ npm install react-native-lyric
 ```js
 import React, { useCallback } from 'react';
 import { Text } from 'react-native';
-import { Lrc } from 'react-native-lyric';
+import { Lyric } from 'react-native-lyric';
 
 const Lyric = ({ lrc, currentTime }) => {
   const lineRenderer = useCallback(
@@ -27,7 +27,7 @@ const Lyric = ({ lrc, currentTime }) => {
   );
 
   return (
-    <Lrc
+    <Lyric
       style={{ height: 500 }}
       lrc={lrc}
       currentTime={currentTime}
