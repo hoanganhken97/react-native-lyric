@@ -1,19 +1,11 @@
 {
   "name": "react-native-lyric",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "lyric,lrc,karaoke",
-  "main": "lib/commonjs/index.js",
-  "module": "lib/module/index.js",
-  "source": "src/index.tsx",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "jest",
-    "typescript": "tsc --noEmit",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "prepare": "bob build",
-    "release": "release-it",
-    "example": "yarn --cwd example",
-    "pods": "cd example && pod-install --quiet",
-    "bootstrap": "yarn example && yarn && yarn pods"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "keywords": [
     "react-native",
@@ -43,92 +35,16 @@
     "eslint-plugin-prettier": "^3.1.3",
     "husky": "^6.0.0",
     "jest": "^26.0.1",
+    "metro-react-native-babel-preset": "^0.70.0",
+    "microbundle-crl": "^0.13.11",
     "prettier": "^2.0.5",
     "react": "16.13.1",
     "react-native": "0.63.4",
-    "react-native-builder-bob": "^0.18.2",
     "release-it": "^14.2.2",
     "typescript": "^4.1.3"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
-  },
-  "jest": {
-    "preset": "react-native",
-    "modulePathIgnorePatterns": [
-      "<rootDir>/example/node_modules",
-      "<rootDir>/lib/"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}"
-    },
-    "npm": {
-      "publish": true
-    },
-    "github": {
-      "release": true
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": "angular"
-      }
-    }
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "@react-native-community",
-      "prettier"
-    ],
-    "rules": {
-      "prettier/prettier": [
-        "error",
-        {
-          "quoteProps": "consistent",
-          "singleQuote": true,
-          "tabWidth": 2,
-          "trailingComma": "es5",
-          "useTabs": false
-        }
-      ]
-    }
-  },
-  "eslintIgnore": [
-    "node_modules/",
-    "lib/"
-  ],
-  "prettier": {
-    "quoteProps": "consistent",
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "es5",
-    "useTabs": false
-  },
-  "react-native-builder-bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": [
-      "commonjs",
-      "module",
-      "typescript"
-    ]
-  },
-  "react-native": "src/index.ts",
-  "types": "lib/typescript/src/index.d.ts",
-  "files": [
-    "src",
-    "lib",
-    "!**/__tests__",
-    "!**/__fixtures__",
-    "!**/__mocks__"
-  ]
+  }
 }
