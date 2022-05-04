@@ -2,6 +2,12 @@
 
 lyric,lrc,karaoke
 
+Demo app
+
+<p align="center">
+<img src="/introl.gif" height="500" />
+</p>
+
 ## Installation
 
 ```sh
